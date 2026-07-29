@@ -1,0 +1,31 @@
+{
+  "name": "genpark-vector-database-hybrid-reranking-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Vector database BM25 + dense hybrid search reranking engine.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "vector-search",
+    "hybrid-reranking",
+    "bm25",
+    "dense-retrieval"
+  ],
+  "inputs": {
+    "search_query": {
+      "type": "string"
+    },
+    "top_k": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "reranked_results": {
+      "type": "array"
+    },
+    "reciprocal_rank": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
